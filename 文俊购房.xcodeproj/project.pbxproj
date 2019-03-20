@@ -72,7 +72,6 @@
 		AE20AD921EC40D3B008C21D0 /* DescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE20AD911EC40D3B008C21D0 /* DescriptionCell.m */; };
 		AE239B491E4D695100CFDEBE /* HomeShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE239B481E4D695100CFDEBE /* HomeShowCell.m */; };
 		AE239B4C1E4D84C400CFDEBE /* HomeAreaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE239B4B1E4D84C400CFDEBE /* HomeAreaCell.m */; };
-		AE247BA11D3CD5E9000BA3FF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE247B871D3CD5E9000BA3FF /* Info.plist */; };
 		AE247BA21D3CD5E9000BA3FF /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AE247B891D3CD5E9000BA3FF /* MASCompositeConstraint.m */; };
 		AE247BA31D3CD5E9000BA3FF /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AE247B8C1D3CD5E9000BA3FF /* MASConstraint.m */; };
 		AE247BA41D3CD5E9000BA3FF /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = AE247B8E1D3CD5E9000BA3FF /* MASConstraintMaker.m */; };
@@ -1846,7 +1845,6 @@
 				04F73D411CE7005E00E954BB /* Sources */,
 				04F73D421CE7005E00E954BB /* Frameworks */,
 				04F73D431CE7005E00E954BB /* Resources */,
-				86897FE2746142E9EAC13D58 /* [CP] Embed Pods Frameworks */,
 				75E65E0B5DA577A43D69561F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1866,8 +1864,6 @@
 				04F73D5A1CE7005F00E954BB /* Sources */,
 				04F73D5B1CE7005F00E954BB /* Frameworks */,
 				04F73D5C1CE7005F00E954BB /* Resources */,
-				0C9A898375605E3624CA9480 /* [CP] Embed Pods Frameworks */,
-				D00EF6175FBBDA6D2A8C22E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1887,8 +1883,6 @@
 				04F73D651CE7005F00E954BB /* Sources */,
 				04F73D661CE7005F00E954BB /* Frameworks */,
 				04F73D671CE7005F00E954BB /* Resources */,
-				DE8F1C34C5FF44251AFD6AE2 /* [CP] Embed Pods Frameworks */,
-				962CC051AA59BBDE2E18248D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1911,16 +1905,16 @@
 				TargetAttributes = {
 					04F73D441CE7005E00E954BB = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = ZH4GVGKX6B;
+						DevelopmentTeam = XM8347382N;
 					};
 					04F73D5D1CE7005F00E954BB = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = J63WC77KHY;
+						DevelopmentTeam = XM8347382N;
 						TestTargetID = 04F73D441CE7005E00E954BB;
 					};
 					04F73D681CE7005F00E954BB = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = J63WC77KHY;
+						DevelopmentTeam = XM8347382N;
 						TestTargetID = 04F73D441CE7005E00E954BB;
 					};
 				};
@@ -1961,7 +1955,6 @@
 				04F73D551CE7005E00E954BB /* Assets.xcassets in Resources */,
 				04097BFF1CEB50E800209910 /* user.plist in Resources */,
 				04F73D531CE7005E00E954BB /* Main.storyboard in Resources */,
-				AE247BA11D3CD5E9000BA3FF /* Info.plist in Resources */,
 				0417712F1CE98B0D00E1855E /* HotCity.plist in Resources */,
 				040D17F61CED545A009FC602 /* PeopleSay.plist in Resources */,
 			);
@@ -1984,34 +1977,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C9A898375605E3624CA9480 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-文俊购房Tests/Pods-文俊购房Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		75E65E0B5DA577A43D69561F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-文俊购房/Pods-文俊购房-resources.sh",
+				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AVOSCloud_Art.inc",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-文俊购房/Pods-文俊购房-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-文俊购房/Pods-文俊购房-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8307062E9BBEA1C4820F9C7D /* [CP] Check Pods Manifest.lock */ = {
@@ -2020,43 +2001,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-文俊购房-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		86897FE2746142E9EAC13D58 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-文俊购房/Pods-文俊购房-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		962CC051AA59BBDE2E18248D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-文俊购房UITests/Pods-文俊购房UITests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C597D69017A1E12FCC8AD880 /* [CP] Check Pods Manifest.lock */ = {
@@ -2065,43 +2019,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-文俊购房Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D00EF6175FBBDA6D2A8C22E7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-文俊购房Tests/Pods-文俊购房Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE8F1C34C5FF44251AFD6AE2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-文俊购房UITests/Pods-文俊购房UITests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E214BAC094BA33C1FE4A5081 /* [CP] Check Pods Manifest.lock */ = {
@@ -2110,13 +2037,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-文俊购房UITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2429,7 +2359,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XM8347382N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/文俊购房/Pods/AMap2DMap",
@@ -2437,7 +2367,7 @@
 					"$(PROJECT_DIR)/文俊购房/Pods/AMapSearch",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/junshuai/Desktop/便捷租房帮/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = "文俊购房/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2446,10 +2376,10 @@
 					"$(PROJECT_DIR)/文俊购房/Pods/JCore",
 					"$(PROJECT_DIR)/文俊购房/Pods/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----lovedy";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjlovedy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SHARED_PRECOMPS_DIR = "/Users/junshuai/Desktop/便捷租房帮/PrefixHeader.pch";
+				SHARED_PRECOMPS_DIR = "$(SRCROOT)/PrefixHeader.pch";
 			};
 			name = Debug;
 		};
@@ -2461,7 +2391,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XM8347382N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/文俊购房/Pods/AMap2DMap",
@@ -2469,7 +2399,7 @@
 					"$(PROJECT_DIR)/文俊购房/Pods/AMapSearch",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/junshuai/Desktop/便捷租房帮/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = "文俊购房/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2478,10 +2408,10 @@
 					"$(PROJECT_DIR)/文俊购房/Pods/JCore",
 					"$(PROJECT_DIR)/文俊购房/Pods/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----lovedy";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wjlovedy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SHARED_PRECOMPS_DIR = "/Users/junshuai/Desktop/便捷租房帮/PrefixHeader.pch";
+				SHARED_PRECOMPS_DIR = "$(SRCROOT)/PrefixHeader.pch";
 			};
 			name = Release;
 		};
@@ -2490,6 +2420,7 @@
 			baseConfigurationReference = C0DC12DC298C59717FEF8588 /* Pods-文俊购房Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XM8347382N;
 				INFOPLIST_FILE = "文俊购房Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----Tests";
@@ -2503,6 +2434,7 @@
 			baseConfigurationReference = 7E54A8F192DBDF0584467E41 /* Pods-文俊购房Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XM8347382N;
 				INFOPLIST_FILE = "文俊购房Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----Tests";
@@ -2515,6 +2447,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EEB44EDAF9A0291C1E43BCE4 /* Pods-文俊购房UITests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XM8347382N;
 				INFOPLIST_FILE = "文俊购房UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----UITests";
@@ -2528,6 +2461,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76294CE774C04F6A35A53E6A /* Pods-文俊购房UITests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XM8347382N;
 				INFOPLIST_FILE = "文俊购房UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wj.----UITests";
